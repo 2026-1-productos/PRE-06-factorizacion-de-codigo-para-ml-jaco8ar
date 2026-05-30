@@ -44,11 +44,14 @@ mse = mean_squared_error(y_train, y_pred)
 mae = mean_absolute_error(y_train, y_pred)
 r2 = r2_score(y_train, y_pred)
 
-print()
-print("Metricas de entrenamiento:")
-print(f"  MSE: {mse}")
-print(f"  MAE: {mae}")
-print(f"  R2: {r2}")
+def new_func(mse, mae, r2):
+    print()
+    print("Metricas de entrenamiento:")
+    print(f"  MSE: {mse}")
+    print(f"  MAE: {mae}")
+    print(f"  R2: {r2}")
+
+new_func(mse, mae, r2)
 
 # Metricas de error durante testing
 print()
